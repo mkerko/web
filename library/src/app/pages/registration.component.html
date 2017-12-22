@@ -1,0 +1,18 @@
+<div >
+        <form (ngSubmit)="registerUser()" >
+            <div class="form-group">
+                <label>Email:</label>  
+                <input type="text" class="form-control"  [(ngModel)]="email" id="email" name="email" required/>
+            </div>
+            <div class="form-group">
+                <label>Password:</label>  
+                <input type="password" class="form-control"  [(ngModel)]="password" id="password" name="password" required/>
+            </div>
+            <div class="form-group">
+                <label>Role:</label>  
+                <input type="text" class="form-control"  [(ngModel)]="role" id="role" name="role" required/>
+            </div>
+             
+            <button type="submit">Submit</button>
+            </form>            
+    </div>

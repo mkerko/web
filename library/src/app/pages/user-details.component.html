@@ -1,0 +1,10 @@
+<div *ngIf="user"> 
+       <h3>User</h3> {{user.name}} {{user.surname}}, {{user.faculty}}
+
+       
+       <a [routerLink]="['/users', user.id, 'edit']"  class="btn btn-outline-dark">Edit</a>
+
+       <button (click)="deleteUser()" class="btn btn-outline-dark">Delete</button> 
+       
+       <button (click)="goBack()" class="btn btn-primary">Go back</button>
+</div> 

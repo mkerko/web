@@ -1,0 +1,5 @@
+<div *ngIf="users"> 
+    <div *ngFor="let user of users" > 
+        {{user.name}} {{user.surname}}, {{user.faculty}}
+        <a [routerLink]="['/users', user.id]">View</a> 
+</div> 
